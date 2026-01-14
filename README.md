@@ -13,14 +13,14 @@ docker run -it \
     --restart unless-stopped \
     -p 5520:5520/udp \
     -v ./server:/server \
-    ghcr.io/Gamecube762/docker-hytale-server:latest
+    ghcr.io/gamecube762/docker-hytale-server:latest
 ```
 
 ### docker-compose.yml:
 ```yaml
 services:
   hytale:
-    image: ghcr.io/Gamecube762/docker-hytale-server:latest
+    image: ghcr.io/gamecube762/docker-hytale-server:latest
     restart: unless-stopped
     ports:
       - "5520:5520/udp"
