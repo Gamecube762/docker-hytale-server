@@ -8,7 +8,7 @@ RUN groupadd --gid 1000 hytale && \
     mkdir /app /server && \
     chown -R hytale:hytale /server
 
-COPY start.sh /app
+COPY --chmod=0755 start.sh /app
 
 USER hytale
 WORKDIR /server
